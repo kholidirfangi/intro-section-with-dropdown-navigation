@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <!-- my css -->
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Frontend Mentor | Intro section with dropdown navigation</title>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <img src="images/logo.svg" alt="" class="logo" />
+        <nav>
+          <div class="icon-close">
+            <img src="images/icon-close-menu.svg" alt="" />
+          </div>
+          <div class="navigation">
+            <div class="dropdown">
+              <div class="features">
+                <a href="#">Features</a>
+                <svg width="10" height="6" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    stroke="#686868"
+                    stroke-width="1.5"
+                    fill="none"
+                    d="m1 1 4 4 4-4"
+                  />
+                </svg>
+              </div>
+              <ul class="features-list">
+                <li>
+                  <img src="images/icon-todo.svg" alt="to do list" />
+                  <p class="name-features">Todo List</p>
+                </li>
+                <li>
+                  <img src="images/icon-calendar.svg" alt="calender" />
+                  <p class="name-features">Calender</p>
+                </li>
+                <li>
+                  <img src="images/icon-reminders.svg" alt="reminders" />
+                  <p class="features-name">Reminders</p>
+                </li>
+                <li>
+                  <img src="images/icon-planning.svg" alt="planning" />
+                  <p class="features-name">Planning</p>
+                </li>
+              </ul>
+            </div>
+            <div class="dropdown">
+              <div class="company">
+                <a href="#">Company</a>
+                <svg width="10" height="6" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    stroke="#686868"
+                    stroke-width="1.5"
+                    fill="none"
+                    d="m1 1 4 4 4-4"
+                  />
+                </svg>
+              </div>
+              <ul class="company-list">
+                <li>
+                  <p class="company-name">History</p>
+                </li>
+                <li>
+                  <p class="company-name">Our Team</p>
+                </li>
+                <li>
+                  <p class="company-name">Blog</p>
+                </li>
+              </ul>
+            </div>
+            <a class="careers" href="#">Careers</a>
+            <a class="about" href="#">About</a>
+          </div>
+          <div class="btn">
+            <button class="login">Login</button>
+            <button class="register">Register</button>
+          </div>
+        </nav>
+        <img class="icon-menu" src="images/icon-menu.svg" alt="" />
+      </header>
+
+      <div class="main">
+        <div class="hero-image">
+          <picture>
+            <source
+              srcset="images/image-hero-desktop.png"
+              media="(min-width:500px)"
+              class="image-desktop"
+            />
+            <img src="images/image-hero-mobile.png" alt="" />
+          </picture>
+        </div>
+        <div class="content">
+          <div class="thumb">
+            <h1>Make remote work</h1>
+            <p>
+              Get your team in sync, no matter your location. Streamline
+              processes, create team rituals, and watch productivity soar.
+            </p>
+            <button class="more">Learn more</button>
+          </div>
+
+          <div class="client-list">
+            <img class="client" src="images/client-databiz.svg" alt="" />
+            <img class="client" src="images/client-audiophile.svg" alt="" />
+            <img class="client" src="images/client-meet.svg" alt="" />
+            <img class="client" src="images/client-maker.svg" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">
+        Frontend Mentor
+      </a>
+      . Coded by
+      <a href="#">Your Name Here</a>
+      .
+    </div> -->
+    <script src="script.js"></script>
+  </body>
+</html>

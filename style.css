@@ -1,0 +1,357 @@
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap');
+
+/* reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* style for all */
+
+body {
+  font-family: 'Epilogue', sans-serif;
+  width: 100%;
+  background: hsl(0, 0%, 98%);
+}
+
+.container {
+  position: relative;
+}
+
+a {
+  text-decoration: none;
+  color: hsl(0, 0%, 41%);
+  font-weight: 500;
+}
+
+a:hover {
+  color: hsl(0, 0%, 8%);
+}
+
+/* header */
+
+header {
+  padding: 1rem;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navigation div.dropdown:hover a {
+  color: hsl(0, 0%, 8%);
+}
+
+.navigation div.dropdown:hover svg path {
+  stroke: hsl(0, 0%, 8%);
+}
+
+.icon-close {
+  display: flex;
+  justify-content: flex-end;
+  margin: 0.3rem;
+}
+
+.icon-close img {
+  width: 30px;
+}
+
+.dropdown,
+.careers,
+.about {
+  display: block;
+  padding-bottom: 0.8rem;
+}
+
+.dropdown .features,
+.dropdown .company,
+.careers,
+.about {
+  font-size: 1.2rem;
+}
+
+.navigation p {
+  font-size: 1.1rem;
+}
+
+ul {
+  display: none;
+  padding: 1rem 0;
+}
+
+ul li {
+  list-style: none;
+  padding: 0.8rem;
+}
+
+ul.features-list li {
+  display: flex;
+}
+
+ul.features-list li p {
+  margin-left: 1rem;
+}
+
+li:hover {
+  cursor: pointer;
+  font-weight: bold;
+}
+
+header .btn {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  align-atems: center;
+  padding: 1rem;
+}
+
+button.login {
+  background: transparent;
+  color: hsl(0, 0%, 41%);
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+button.login:hover {
+  color: hsl(0, 0%, 8%);
+  cursor: pointer;
+}
+
+button.register:hover {
+  color: hsl(0, 0%, 8%);
+  cursor: pointer;
+  outline: 2px solid hsl(0, 0%, 8%);
+}
+
+button.register {
+  outline: 2px solid hsl(0, 0%, 41%);
+  padding: 0.5rem 1rem;
+  background: transparent;
+  border-radius: 12px;
+  font-size: 1.2rem;
+  color: hsl(0, 0%, 41%);
+}
+
+/* main section */
+
+.main .hero-image {
+  padding: 1rem 0;
+}
+
+picture img {
+  width: 100%;
+}
+
+.content {
+  padding: 1.5rem;
+}
+
+.content .thumb {
+  text-align: center;
+}
+
+.thumb h1 {
+  font-weight: 700;
+  font-size: 2.1rem;
+  margin-bottom: 1.5rem;
+  color: hsl(0, 0%, 8%);
+}
+
+.thumb p {
+  font-size: 18px;
+  font-weight: 500;
+  color: hsl(0, 0%, 41%);
+  line-height: 1.5rem;
+}
+
+button {
+  border: none;
+}
+
+.thumb button {
+  padding: 1rem 1.5rem;
+  background: hsl(0, 0%, 8%);
+  color: hsl(0, 0%, 98%);
+  border-radius: 16px;
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin: 2rem 0;
+  transition: 250ms;
+  cursor: pointer;
+}
+
+.thumb button:hover {
+  background: hsl(0, 0%, 98%);
+  color: hsl(0, 0%, 8%);
+  outline: 2px solid hsl(0, 0%, 8%);
+}
+
+.client-list {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 1.5rem;
+}
+
+.client-list .client {
+  display: block;
+  width: 3.6rem;
+}
+
+/* called in js */
+
+.black {
+  color: hsl(0, 0%, 8%);
+}
+
+.block {
+  display: block;
+}
+
+/* style for mobile */
+
+@media screen and (max-width: 500px) {
+  nav {
+    display: none;
+    position: fixed;
+    background: hsl(0, 0%, 98%);
+    width: 70vw;
+    height: 100vh;
+    top: 0;
+    right: 0;
+    padding: 1rem;
+  }
+
+  .navigation {
+    padding-top: 1rem;
+  }
+}
+
+/* style for desktop */
+
+@media screen and (min-width: 500px) {
+  header img.icon-menu {
+    display: none;
+  }
+
+  header nav .icon-close {
+    display: none;
+  }
+
+  header img.logo {
+    margin-left: 2rem;
+  }
+
+  /* nav style */
+
+  header nav {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    padding-left: 1.5rem;
+  }
+
+  .navigation div.dropdown:hover ul.features-list,
+  .navigation div.dropdown:hover ul.company-list {
+    display: block;
+  }
+
+  ul.features-list {
+    position: absolute;
+    top: 2rem;
+    left: 0;
+    background: #fff;
+    border-radius: 8px;
+    padding: 1rem;
+    min-width: 190px;
+    box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.1);
+    transition: all 250ms ease-in-out;
+  }
+
+  ul.company-list {
+    position: absolute;
+    top: 2rem;
+    left: 3rem;
+    background: #fff;
+    border-radius: 8px;
+    padding: 1rem;
+    min-width: 150px;
+    box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.1);
+    transition: all 250ms ease-in-out;
+  }
+
+  header nav .navigation {
+    display: flex;
+  }
+
+  .dropdown,
+  .careers,
+  .about {
+    padding: 0 2rem;
+    position: relative;
+  }
+
+  header .btn {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  button.login {
+    margin-bottom: 0;
+    margin-right: 1.5rem;
+  }
+
+  .main {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    min-width: 80vw;
+    padding: 0 8rem;
+  }
+
+  .main .hero-image {
+    width: 400px;
+  }
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin-right: 3rem;
+    max-width: 650px;
+    margin-top: 2.5rem;
+    max-height: 100%;
+  }
+
+  .content .thumb {
+    text-align: left;
+  }
+
+  .thumb h1 {
+    font-size: 5.6rem;
+  }
+
+  .thumb p {
+    font-size: 18px;
+    margin-bottom: 1rem;
+    max-width: 450px;
+  }
+
+  .thumb button {
+    margin-bottom: 5rem;
+  }
+
+  .client-list {
+    padding: 0;
+  }
+
+  .client-list .client {
+    width: 4rem;
+  }
+}
