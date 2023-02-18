@@ -64,11 +64,29 @@ header {
   padding-bottom: 0.8rem;
 }
 
+.features, .company {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
 .dropdown .features,
 .dropdown .company,
 .careers,
 .about {
   font-size: 1.2rem;
+}
+
+.arrow-up {
+  display: none;
+}
+
+svg {
+  margin-left: 0.5rem;
+}
+
+svg:hover {
+  cursor: pointer;
 }
 
 .navigation p {
@@ -208,6 +226,10 @@ button {
   display: block;
 }
 
+.hidden {
+  display: none;
+}
+
 /* style for mobile */
 
 @media screen and (max-width: 500px) {
@@ -251,6 +273,8 @@ button {
     align-items: center;
     padding-left: 1.5rem;
   }
+
+  
 
   .navigation div.dropdown:hover ul.features-list,
   .navigation div.dropdown:hover ul.company-list {

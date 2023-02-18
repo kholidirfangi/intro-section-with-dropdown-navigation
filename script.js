@@ -9,6 +9,8 @@ const featuresText = document.querySelector('.features a');
 const companyText = document.querySelector('.company a');
 const about = document.querySelector('.about');
 const careers = document.querySelector('.careers');
+const arrowUp = document.querySelectorAll('.arrow-up');
+const arrowDown = document.querySelectorAll('.arrow-down');
 
 iconMenu.addEventListener('click', () => {
   nav.style.display = 'block';
@@ -21,11 +23,15 @@ iconClose.addEventListener('click', () => {
 features.addEventListener('click', () => {
   featuresText.classList.toggle('black');
   featuresList.classList.toggle('block');
+  arrowUp[0].classList.toggle('block');
+  arrowDown[0].classList.toggle('hidden');
 });
 
 company.addEventListener('click', () => {
   companyText.classList.toggle('black');
   companyList.classList.toggle('block');
+  arrowUp[1].classList.toggle('block');
+  arrowDown[1].classList.toggle('hidden');
 });
 
 about.addEventListener('click', () => {
