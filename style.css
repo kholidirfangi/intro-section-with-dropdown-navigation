@@ -64,10 +64,11 @@ header {
   padding-bottom: 0.8rem;
 }
 
-.features, .company {
+.features,
+.company {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: start;
 }
 
 .dropdown .features,
@@ -273,8 +274,6 @@ button {
     align-items: center;
     padding-left: 1.5rem;
   }
-
-  
 
   .navigation div.dropdown:hover ul.features-list,
   .navigation div.dropdown:hover ul.company-list {
